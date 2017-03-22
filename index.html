@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>Training Zone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(Images/main.jpg);
+        min-height: 100%;
+    }
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-closenav w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+        <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block">
+        <a href="#" class="w3-bar-item w3-button w3-center w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-center w3-text-grey w3-hover-black" onclick="closeNav()">Our Trainers</a>
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-text-grey w3-hover-black" onclick="closeNav()">History</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-opennav w3-top w3-padding-top w3-xxlarge w3-margin-right w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-padding-128 w3-center" id="home">
+        <h1 class="w3-jumbo"><b>Training Zone</b></h1>
+        <p>Training and learning professionals</p>
+        <img src="Images/main.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+        <img src="Images/main.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+        <button class="w3-button w3-padding-large w3-margin-top">
+            <i class="fa fa-download"></i> Sign Up
+        </button>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+        <h2 class="w3-text-grey">Our Trainers</h2>
+        <hr class="w3-opacity">
+
+        <!-- Grid for photos -->
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+                <img src="Images/train.jpg" style="width:100%">
+                <img src="Images/class.jpg" style="width:100%">
+            </div>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+                <hr class="w3-opacity">
+                <p>Terrence Zonas – is an American computer scientist and Internet entrepreneur who co-founded Goggle, one of the world's most profitable Internet companies. However, his real passion and work is Training Zone where he likes to teach people things that make a difference.
+
+                    Stafford Gray – Stafford is a senior Information Technology trainer. His primary research area is Cryptography. More precisely, Society-Oriented and/or Threshold Cryptography. Currently his principle research themes are:Multi-Party Computations, Oblivious Transfers, and Secret Sharing Schemes. He teaches a wide range of topics in Computer Science such as, Operating Systems, Data Structures, Algorithms & Complexity, Information Security, Cryptography, Databases and Data Mining.
+
+                    Adrienne Michowski - an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. Because of this, she is often regarded as the first computer programmer. She trains clients in programming and longevity.
+                </p>
+
+                    <!-- End photo grid -->
+        </div>
+
+        <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>History</h2>
+        <hr class="w3-opacity">
+        <p> Training Zone have been the leader in all kinds of training that covers management and IT in Plongk St, Cairnsville for the last 150 years. The founder of the company, Terrence Zonas is still CEO and spokesperson for Training Zone. Here is one of his first ever training lessons, the world-famous Lecture Clash training:
+            Anyone got a lecture clash? They're not pretty, but with your help, they can be manageable. Here are some thoughts on how to deal with it:
+        <ol><li>•	Realise that it's up to you. You are responsible for making it work.</li>
+        <li>	Attend one lecture and get the notes from the other (start with the web notes, but that's not enough).</li>
+        <li>Find a friend in the one you miss and get them to tell you what else was covered in class that's not on the web.</li>
+        <li>	Which one do you miss? - Some ideas to help you with that decision are:</li>
+        <li>	If you miss one out of two lectures for a subject, that's 50%. If you miss one out of 3 that's 33%.</li>
+        <li>	Which one are you most on top of?</li>
+        <li>	Which subject has the most complete lecture notes?</li>
+        <li>	Don't ask your lecturer - "did I miss anything in the lecture?" If you didn't miss anything, there'd be no point to lectures.</li></ol><br>
+            For more training, email Training Zone.
+        </p>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>Training Article</h2>
+            <hr class="w3-opacity">
+            <p>Management File - What IS The Point Of Performance Appraisal
+                Training Article
+                Management File - What IS The Point Of Performance Appraisal
+                By Robert Bacal, M.A.
+                Robert Bacal is a noted author, keynote speaker, and management consultant. His most recent books include Performance Management - A Briefcase Book, and The Complete Idiot's Guide To Managing Difficult Employees. The Work911 Supersite contains many more free articles and tips on a number of workplace topics. Access it at www.work911.com . Robert can be contacted via e-mail at ceo@work911.com or by phone at (204) 888-9290.
+                Probably the most misused and abused and disused management tool in history is the performance appraisal. It's the strangest thing. Ask any manager or human resources person whether they think performance appraisal is an important thing to do, they are almost unanymous. "Of course it is", is the common response. If you ask why it's important, they will tell you and tell you and tell you.
+                The odd thing is that they often don't get done, and managers, supervisors and employees hate the darned things. Human resource professionals spend a lot of time whipping people into doing them, while managers look for a variety of reasons to delay and delay. Why is that?
+                It's uncomfortable to do performance appraisals. But why is it uncomfortable? Because people undertake them for the wrong reasons and wrong perspective, which ends up putting the manager and the employee on different "sides". Appraisals are used for determining pay increases, who gets let go, who gets promoted. Often they are used to focus on what people have done wrong.
+                So what is the point of performance appraisals? Here's a starting point that actually works. The most important purpose or goal of the appraisal is to improve performance in the future...and not just for the employee. Managers can get valuable information from employees to help them make employee's jobs more productive. Work units and organizations can identify problems that interfere with everyone's work.
+                If we shift from affixing blame, to identifying barriers to performance we begin to remove the fear and dread people have about these "appraisals". When we focus on the present and the future, we change our focus to what's been to what can be better tomorrw.
+                An appraisal that works involves a number of things, but first and foremost is the process of identifying what has gotten in the way of better performance (regardless of the level of performance), and how manager and employee can work together in the future, to improve it. It's really that simple.
+                When managers put away the "blaming stick" in appraisals and move to a cooperative, dialogue approach, the whole process can become more comfortable and effective. Because, it puts the manager and employee on the same side, and working towards the same goals, getting better and better.
+                Sure, we do use appraisals for a number of reasons but if we are going to get real value out of the time and energy we put into them, we have to look at the process in a more constructive way. And, bottom line, that's making performance better.
+
+                For more information on this and other workplace topics, go to the Work911 supersite by clicking here (http://www.work911.com/).
+                © Copyright Robert Bacal, 2000. You may reproduce this material within your organization or in newsletters free of charge provided this statement is included, and all contact information is also included.</p>
+
+            <h3 class="w3-padding-16">Announcements</h3>
+        <p class="w3-wide">Sucsess Rate</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+        </div>
+        <p class="w3-wide">Employment Rate</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">Employment longer than 5 years</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+        </div><br>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">150+</span><br>
+                Partners
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">500+</span><br>
+                Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">10K+</span><br>
+                Happy Clients
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">30K+</span><br>
+                Lectures
+            </div>
+        </div>
+
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+            <i class="fa fa-download"></i> Sign Up
+        </button>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+                <h2>Deals</h2>
+                <hr class="w3-opacity">
+                <p>
+            •	For this month only, you can bring a friend to our evening training sessions for half price.<br>
+            •	We now provide a laundry service to current training customers. Ask about it when you book your next session.<br>
+                    •	A representative from the Transport orthority will be in our training centre on Friday the 13th to discuss their new training . system, “Perfectrain”</p>
+
+
+            <!-- Testimonials -->
+        <h3 class="w3-padding-24">Testimonials</h3>
+        <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
+        <p>Traning Zone is just awesome. I am so happy to have signed up!</p><br>
+
+        <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+        <p>Traning Zone saved us from a web disaster.</p><br>
+
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than Traning Zone .</p><br>
+
+        <!-- Grid for pricing tables -->
+        <h3 class="w3-padding-16">Our Prices</h3>
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half w3-margin-bottom">
+                <ul class="w3-ul w3-center w3-card-2 w3-hover-shadow">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                    <li class="w3-padding-16">Web Design</li>
+                    <li class="w3-padding-16">coding</li>
+                    <li class="w3-padding-16">interview</li>
+                    <li class="w3-padding-16">Mail Support</li>
+                    <li class="w3-padding-16">
+                        <h2>$ 10</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-half">
+                <ul class="w3-ul w3-center w3-card-2 w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Full</li>
+                    <li class="w3-padding-16">Everything in basic</li>
+                    <li class="w3-padding-16">24/7 access</li>
+                    <li class="w3-padding-16">downloadable lectures</li>
+                    <li class="w3-padding-16">Endless Support</li>
+                    <li class="w3-padding-16">
+                        <h2>$ 25</h2>
+                        <span class="w3-opacity">per month</span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Grid/Pricing tables -->
+        </div>
+
+        <!-- End About Section -->
+    </div>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+                <h2>Links</h2>
+                <hr class="w3-opacity">
+                <p>
+
+            While we believe the best training is done face-to-face (with us!), here are some good web sites for you to do extra work:
+
+            Business Philosophy from Jim Rohn: http://www.jimrohn.com/
+                    Inspiring true performance… Zig Ziglar : http://www.zigziglar.com/</p>
+
+
+            <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+        <h2>Contact Us</h2>
+        <hr class="w3-opacity">
+
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 12 Plongk Street, Cairnsville, Queensland</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 07 4779 1243/fax: 4779 1244</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: training@trainingzone.com.au</p>
+        </div>
+
+        <p>Lets get in touch. Send our staff a message:</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+        <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+        <i class="fa fa-instagram w3-hover-text-purple"></i>
+        <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+        <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+        <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+        <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+</div>
+
+<!-- Add Google Maps -->
+<script>
+    function myMap()
+    {
+        myCenter=new google.maps.LatLng(41.878114, -87.629798);
+        var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+
+    // Open and close sidebar
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
